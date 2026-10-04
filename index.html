@@ -1,0 +1,179 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishraz Ahmed Tahir - Professional Portfolio</title>
+    <link rel="icon" type="image/png" href="something.jpeg">
+    <link rel="stylesheet" id="theme-style" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Mishraz Ahmed Tahir</h1>
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    
+    <!-- Separate Control Buttons -->
+    <div class="control-buttons">
+        <button id="theme-toggle" onclick="toggleTheme()" class="theme-btn">🌙 Dark Mode</button>
+        </div>
+</nav>
+    </header>
+
+    <div class="grid-container">
+        
+        <main class="main-content" id="home">
+            <section class="intro-section">
+                <h2>Welcome to My Profile</h2>
+                <p>Hello! I am Mishraz Ahmed Tahir, a passionate Computer Science student, and digital marketing strategist specializing in content creation, prompt engineering, and campaign management.</p>
+            </section>
+
+            <section class="education-section" id="about">
+                <h3>Education</h3>
+                <div class="edu-card">
+                    <h4>Bachelor of Science in Computer Science (BSCS)</h4>
+                    <p><strong>National University of Modern Languages (NUML)</strong>, Hyderabad Campus, Pakistan</p>
+                    <p class="edu-date">Enrolled: February 2025 – Present</p>
+                    <p>Focusing on core computer science concepts, software engineering, web technologies, and data systems.</p>
+                </div>
+            </section>
+
+            <section class="experience-section" id="experience">
+                <h3>Professional Experience</h3>
+                <p class="section-hint">Click any experience tile below to view full details and responsibilities.</p>
+                
+                <div class="tiles-grid">
+                    
+                    <div class="tile" onclick="openModal('modal-objex')">
+                        <div class="tile-header">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQF1l6OGmcTMBA/company-logo_200_200/company-logo_200_200/0/1708634625661/objex_logo?e=2147483647&v=beta&t=-ZPnvSGemXS441mbGEY-oGHp0ofmBOsPFKAW71cmWmc" alt="Objex Logo" class="org-logo">
+                            <h4>Objex</h4>
+                        </div>
+                        <p>Social Media Manager & AI Evaluator</p>
+                        <span class="view-more">Click for Details &rarr;</span>
+                    </div>
+
+                    <div class="tile" onclick="openModal('modal-heyjivu')">
+                        <div class="tile-header">
+                            <img src="https://yt3.googleusercontent.com/dt2HsyYhHl3E1EtLubgsmAnLxNU_HydhMjoYg6lM1n0FxTBp2wVTFN_1YDVWM2mNrYKtkwMLeg=s900-c-k-c0x00ffffff-no-rj" alt="HeyJivu Logo" class="org-logo">
+                            <h4>HeyJivu</h4>
+                        </div>
+                        <p>YouTube Content Lead / Marketing Intern</p>
+                        <span class="view-more">Click for Details &rarr;</span>
+                    </div>
+
+                    <div class="tile" onclick="openModal('modal-rabbito')">
+                        <div class="tile-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0loZGxw9KhyQfKJBBxeI_99rJw5yJ_llszB-_7T_ETyJt7K7UlKfh1RN&s=10" alt="Rabbito Logo" class="org-logo">
+                            <h4>Rabbito Social</h4>
+                        </div>
+                        <p>Social Media Manager</p>
+                        <span class="view-more">Click for Details &rarr;</span>
+                    </div>
+
+                    <div class="tile" onclick="openModal('modal-youtube')">
+                        <div class="tile-header">
+                            <img src="https://yt3.googleusercontent.com/LZeUOuOM8lzINkYAKi1X3pCQz1xsSD_EndPUR1vOGesaGavUtyM_-bCUq7Gld-LPX_R7uieWsA=s900-c-k-c0x00ffffff-no-rj" alt="YouTube Logo" class="org-logo">
+                            <h4>youtube</h4>
+                        </div>
+                        <p>Content Creator</p>
+                        <span class="view-more">Click for Details &rarr;</span>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar" id="contact">
+            <div class="profile-pic-container">
+                <img src="something.jpeg" alt="Mishraz Ahmed Tahir" class="profile-img">
+            </div>
+            <h3>Contact & Links</h3>
+            <p>Get in touch or explore my professional platforms below:</p>
+            <ul class="social-links-list">
+                <li><a href="https://www.linkedin.com/in/mishraz-ahmed-tahir-9b5047299?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://www.instagram.com/mishraz_a.tahir?stkn=MWxuOXg4Y2FxM2d5ZA==" target="_blank">Instagram</a></li>
+                <li><a href="https://youtube.com/@m.a.tvisionandperfection6837?si=8fkN3oluerDrDVqN" target="_blank">YouTube Channel</a></li>
+                <li><a href="https://www.facebook.com/share/1DErP3RNvH/" target="_blank">Facebook Profile</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+
+    <div id="modal-objex" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-objex')">&times;</span>
+            <h2>Objex</h2>
+            <p><strong>Role:</strong> Social Media Manager & AI Model Evaluator</p>
+            <p><strong>Responsibilities:</strong> Balanced social media management duties alongside specialized AI model training, data annotation, prompt engineering, and rigorous output evaluation tasks.</p>
+        </div>
+    </div>
+
+    <div id="modal-heyjivu" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-heyjivu')">&times;</span>
+            <h2>HeyJivu</h2>
+            <p><strong>Role:</strong> YouTube Content Team Lead / Social Media Marketing Intern</p>
+            <p><strong>Responsibilities:</strong> Managed social media marketing campaigns, led the YouTube content team, and executed video content strategy and promotional workflows.</p>
+        </div>
+    </div>
+
+    <div id="modal-rabbito" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-rabbito')">&times;</span>
+            <h2>Rabbito Social</h2>
+            <p><strong>Role:</strong> Social Media Manager</p>
+            <p><strong>Responsibilities:</strong> Handled comprehensive social media management and digital marketing initiatives to boost online visibility and engagement.</p>
+        </div>
+    </div>
+
+    <div id="modal-youtube" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-youtube')">&times;</span>
+            <h2>Digital Media & Content Production</h2>
+            <p><strong>Focus:</strong> Video Content Production Script writing</p>
+            <p><strong>Responsibilities:</strong> Utilizing editing software like VSDC, executing promotional scriptwriting, YouTube content production, and creating content for 5 years.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = "☀️ Light Mode";
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = "🌙 Dark Mode";
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('theme-toggle').textContent = "☀️ Light Mode";
+            }
+        }
+    </script>
+</body>
+</html>
